@@ -1,7 +1,7 @@
 var chalk = require("chalk");
 var readlineSync = require("readline-sync");
 
-var playerName = readlineSync.keyInYN("What is your name? ");
+var playerName = readlineSync.question("What is your name? ");
 console.log("------------------------------------------------------");
 console.log(
   chalk.yellow(
@@ -58,7 +58,7 @@ var qNa = [
 var score = 0;
 
 function validateAnswer(quizQues) {
-  var playerAnswer = readlineSync.keyInYN(quizQues.question);
+  var playerAnswer = readlineSync.question(quizQues.question);
   if (playerAnswer.toUpperCase() === quizQues.answer.toUpperCase()) {
     console.log(chalk.green("Yippe!! Your answer is CORRECT."));
     score = score + 1;
