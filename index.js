@@ -76,4 +76,17 @@ for (var i = 0; i < QnA.length; i = i + 1) {
   console.log("------------------------------------------------------");
 }
 
-console.log(chalk.yellow("THANK YOU FOR TAKING THE QUIZ!"));
+console.log("Final score : "+score);
+if(score<5){
+  console.log("Seems like you don't know vanshita well");
+}
+else if(score<=7)
+{
+  console.log("You know vanshita at an average level");
+}
+else{
+  console.log("Congratulations! You know vanshita really well");
+}
+
+
+console.log("THANK YOU FOR TAKING THE QUIZ!");
