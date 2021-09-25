@@ -76,17 +76,12 @@ for (var i = 0; i < QnA.length; i = i + 1) {
   console.log("------------------------------------------------------");
 }
 
-console.log("Final score : "+score);
-if(score<5){
-  console.log("Seems like you don't know vanshita well");
+console.log(chalk.magenta("Final score : " + score));
+if (score < 5) {
+  console.log(chalk.red("Seems like you don't know vanshita well"));
+} else if (score <= 7) {
+  console.log(chalk.blue("You know vanshita at an average level"));
+} else {
+  console.log(chalk.green("Congratulations! You know vanshita really well"));
 }
-else if(score<=7)
-{
-  console.log("You know vanshita at an average level");
-}
-else{
-  console.log("Congratulations! You know vanshita really well");
-}
-
-
 console.log("THANK YOU FOR TAKING THE QUIZ!");
