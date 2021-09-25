@@ -30,7 +30,7 @@ var qNa = [
     answer: "brother",
   },
   {
-    question: "Which social media app I use the most? ",
+    question: "Which messaging app I use the most? ",
     answer: "Whatsapp",
   },
   {
